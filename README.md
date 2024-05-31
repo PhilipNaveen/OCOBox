@@ -1,6 +1,6 @@
 ## Optimization Toolbox
 
-This repository contains MATLAB implementations of various optimization algorithms organized into different categories for ease of navigation.
+This MATLAB toolbox is the start of a long-term project for those interested in building a large-scale user base and community of people who need to experiment with stochastcs, specifically on the online convex optimization framework. The collection of algorithms is intended to be convenient, and I'm open to suggestions on improvements and debugging!
 
 ### Gradient Descent
 
