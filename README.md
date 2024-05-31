@@ -158,3 +158,117 @@ This repository contains MATLAB implementations of various optimization algorith
     - `Xi`: Set of columns of matrix Hi.
   - *Returns*: 
     - `hi`: Learner's hypothesis selected arbitrarily from Hi.
+
+### Momentum-Based Optimization
+
+- **`gradientDescentWithMomentum.m`**: Implementation of Gradient Descent with Momentum.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta`: Momentum parameter.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`miniBatchGradientDescentWithMomentum.m`**: Implementation of Mini-Batch Gradient Descent with Momentum.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta`: Momentum parameter.
+    - `batch_size`: Size of mini-batch.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`nestrovMomentum.m`**: Implementation of Nesterov Momentum.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta`: Momentum parameter.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`adadelta.m`**: Implementation of Adadelta optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `gamma`: Decay rate.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`adagrad.m`**: Implementation of Adagrad optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`adam.m`**: Implementation of Adam optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta1`: Exponential decay rate for the first moment estimates.
+    - `beta2`: Exponential decay rate for the second moment estimates.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`amsgrad.m`**: Implementation of AMSGrad optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta1`: Exponential decay rate for the first moment estimates.
+    - `beta2`: Exponential decay rate for the second moment estimates.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`eve.m`**: Implementation of Eve optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta1`: Exponential decay rate for the first moment estimates.
+    - `beta2`: Exponential decay rate for the second moment estimates.
+    - `gamma`: Regularization term.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`fasfa.m`**: Implementation of Fast Adaptive Stochastic Function Accelerators (FASFA).
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `beta1`: Exponential decay rate for the first moment estimates.
+    - `beta2`: Exponential decay rate for the second moment estimates.
+    - `gamma`: Regularization term.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters.
+
+- **`rmsprop.m`**: Implementation of RMSProp optimization algorithm.
+  - *Inputs*: 
+    - `X`: Matrix of input features (n x m).
+    - `y`: Vector of target labels (n x 1).
+    - `alpha`: Learning rate.
+    - `gamma`: Decay rate.
+    - `epsilon`: Small value to prevent division by zero.
+    - `max_iter`: Maximum number of iterations.
+  - *Returns*: 
+    - `theta`: Vector of parameters
+
