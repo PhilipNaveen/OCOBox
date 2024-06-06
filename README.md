@@ -1,4 +1,4 @@
-## Optimization Toolbox
+# Optimization Toolbox
 
 This MATLAB toolbox is the start of a long-term project for those interested in building a large-scale user base and community of people who need to experiment with stochastcs, specifically on the online convex optimization framework. The collection of algorithms is intended to be convenient, and I'm open to suggestions on improvements and debugging!
 
