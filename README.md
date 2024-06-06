@@ -353,3 +353,95 @@ This MATLAB toolbox is the start of a long-term project for those interested in 
   - *Returns*:
     - `h`: The arbitrarily chosen hypothesis when no counter-example is found.
 
+# Hyperparameterization Toolbox
+
+- **`gridSearch(optimizer, hyperparameter_grid, f, data)`**: Performs grid search over the specified hyperparameter grid.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+  - *Returns*:
+    - Best hyperparameters and performance found by grid search.
+
+- **`randomSearch(optimizer, hyperparameter_grid, f, data, num_trials)`**: Performs random search over the specified hyperparameter grid.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+    - `num_trials`: Number of random trials to perform.
+  - *Returns*:
+    - Best hyperparameters and performance found by random search.
+
+- **`bayesianOptimization(optimizer, hyperparameter_grid, f, data)`**: Performs Bayesian optimization for hyperparameter tuning using Gaussian Processes.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+  - *Returns*:
+    - Best hyperparameters and performance found by Bayesian optimization.
+
+
+- **`populationBasedOptimization(optimizer, hyperparameter_grid, f, data)`**: Performs population-based optimization using differential evolution.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+  - *Returns*:
+    - Best hyperparameters and performance found by population-based optimization.
+
+- **`earlyStopping(optimizer, hyperparameter_grid, f, data)`**: Implements early stopping mechanism for hyperparameter optimization.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+  - *Returns*:
+    - Best hyperparameters and performance found before early stopping.
+
+- **`evolutionaryApproach(optimizer, hyperparameter_grid, f, data)`**: Performs hyperparameter optimization using genetic algorithm.
+  - *Inputs*:
+    - `optimizer`: Function handle to the optimizer.
+    - `hyperparameter_grid`: Struct containing hyperparameter ranges.
+    - `f`: Objective function to optimize.
+    - `data`: Data required by the optimizer.
+  - *Returns*:
+    - Best hyperparameters and performance found by evolutionary approach.
+
+# Learning Rate Schedulers
+
+- **`constantScheduler(stepsize)`**: Constant learning rate scheduler that keeps the learning rate unchanged throughout training.
+  - *Inputs*:
+    - `stepsize`: Initial learning rate or step size.
+  - *Returns*:
+    - Function handle to the constant learning rate scheduler.
+
+- **`linearDecayScheduler(initial_stepsize, decay_rate, iteration)`**: Linear decay learning rate scheduler that decreases the learning rate linearly over iterations.
+  - *Inputs*:
+    - `initial_stepsize`: Initial learning rate or step size.
+    - `decay_rate`: Rate of linear decay.
+    - `iteration`: Current iteration number.
+  - *Returns*:
+    - Updated learning rate or step size.
+
+- **`exponentialDecayScheduler(initial_stepsize, decay_rate, iteration)`**: Exponential decay learning rate scheduler that decreases the learning rate exponentially over iterations.
+  - *Inputs*:
+    - `initial_stepsize`: Initial learning rate or step size.
+    - `decay_rate`: Rate of exponential decay.
+    - `iteration`: Current iteration number.
+  - *Returns*:
+    - Updated learning rate or step size.
+    - 
+- **`cyclicalLogAnnealingScheduler(start_lr, end_lr, cycle_length, iteration)`**: Cyclical learning rate scheduler with logarithmic annealing that varies the learning rate within a cycle.
+  - *Inputs*:
+    - `start_lr`: Initial learning rate.
+    - `end_lr`: Final learning rate.
+    - `cycle_length`: Length of one cycle in iterations.
+    - `iteration`: Current iteration number.
+  - *Returns*:
+    - Updated learning rate.
+
+
