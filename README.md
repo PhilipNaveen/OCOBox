@@ -353,7 +353,7 @@ This MATLAB toolbox is the start of a long-term project for those interested in 
   - *Returns*:
     - `h`: The arbitrarily chosen hypothesis when no counter-example is found.
 
-# Hyperparameterization Toolbox
+## Hyperparameterization Toolbox
 
 - **`gridSearch(optimizer, hyperparameter_grid, f, data)`**: Performs grid search over the specified hyperparameter grid.
   - *Inputs*:
@@ -411,7 +411,7 @@ This MATLAB toolbox is the start of a long-term project for those interested in 
   - *Returns*:
     - Best hyperparameters and performance found by evolutionary approach.
 
-# Learning Rate Schedulers
+## Learning Rate Schedulers
 
 - **`constantScheduler(stepsize)`**: Constant learning rate scheduler that keeps the learning rate unchanged throughout training.
   - *Inputs*:
